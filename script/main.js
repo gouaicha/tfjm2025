@@ -10,11 +10,11 @@ const app = createApp({
   },
   async mounted() {
     if (document.getElementById('planning')) {
-      const response = await fetch('/data/planning.json');
+      const response = await fetch('../data/planning.json');
       this.planning = await response.json();
     }
     if (document.getElementById('app')) {
-      const newsResponse = await fetch('/data/news.json');
+      const newsResponse = await fetch('../data/news.json');
       this.newsList = await newsResponse.json();
     }
   }
