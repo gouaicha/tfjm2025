@@ -1,0 +1,63 @@
+<!-- === /pages/programme.html === -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js"></script>
+  <script type="module">
+    import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js';
+
+    const app = createApp({
+      data() {
+        return { planning: [] }
+      },
+      async mounted() {
+        const response = await fetch('/data/planning.json');
+        this.planning = await response.json();
+      }
+    });
+
+    app.component('planning-event', {
+      props: ['event'],
+      template: `
+        <div class="event">
+          <div class="time">{{ event.time }}</div>
+          <div class="location" v-if="event.location">Lieu : {{ event.location }}</div>
+          <ul v-if="Array.isArray(event.events)">
+            <li v-for="activity in event.events" :key="activity.title || activity">
+              <template v-if="typeof activity === 'string'">
+                {{ activity }}
+              </template>
+              <template v-else>
+                <strong>{{ activity.title }}</strong>
+                <ul>
+                  <li v-for="poule in activity.poules" :key="poule.poule">
+                    Poule {{ poule.poule }} - {{ poule.problème }} :
+                    Défend {{ poule.défend }}, Attaque {{ poule.attaque }}, Observe {{ poule.observe }}<br>
+                    <em>Lieu : {{ poule.lieu }}</em>
+                  </li>
+                </ul>
+              </template>
+            </li>
+          </ul>
+        </div>
+      `
+    });
+
+    app.mount('#planning');
+  </script>
+</head>
+<body>
+  <header><h1>Programme des deux journées</h1></header>
+  <main id="planning">
+    <nav><a href="/index.html">⬅ Retour à l'accueil</a></nav>
+    <template v-for="(event, index) in planning" :key="index">
+      <h2 v-if="index === 0 || event.day !== planning[index-1].day">{{ event.day }}</h2>
+      <planning-event :event="event"></planning-event>
+    </template>
+  </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- === /index.html === -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TFJM Montpellier</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script type="module" src="/script/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tournoi TFJM Montpellier</h1>
+  </header>
+  <main id="app">
+    <nav class="menu">
+      <a href="/pages/comment-s-y-rendre.html" class="menu-button">Comment s'y rendre ?</a>
+      <a href="/pages/programme.html" class="menu-button">Le programme</a>
+      <a href="/pages/plan-campus.html" class="menu-button">Le plan du campus</a>
+      <a href="/pages/contact.html" class="menu-button">Contact</a>
+    </nav>
+
+    <section class="news-feed">
+      <h2 style="text-align:center;">Dernières nouvelles</h2>
+      <news-item v-for="news in newsList" :key="news.time" :news="news"></news-item>
+    </section>
+  </main>
+</body>
+</html>

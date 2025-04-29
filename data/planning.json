@@ -1,0 +1,55 @@
+[
+    { "day": "Samedi", "time": "09:45", "events": [] },
+    { "day": "Samedi", "time": "10:00", "events": [
+      "Impression fiches synthèses Jour 1 (9x2x3) [54 feuilles]",
+      "Accueil des participants, distribution goodies, installation dans les salles par équipes",
+      "Travail autonome facultatif"
+    ] },
+    { "day": "Samedi", "time": "11:30", "events": ["Cérémonie d'ouverture"] },
+    { "day": "Samedi", "time": "12:00", "events": ["Déjeuner collectif"] },
+    { "day": "Samedi", "time": "12:30", "events": ["Travail autonome facultatif", "Formation nouveaux jurés"] },
+    { "day": "Samedi", "time": "13:00", "events": ["Délibération sur les écrits"] },
+    { "day": "Samedi", "time": "14:00", "events": [
+      {"title": "Débat 1", "poules": [
+        {"poule": "A", "problème": "Problème 1", "défend": "Equipe 1", "attaque": "Equipe 2", "observe": "Equipe 3"},
+        {"poule": "B", "problème": "Problème 2", "défend": "Equipe 4", "attaque": "Equipe 5", "observe": "Equipe 6"},
+        {"poule": "C", "problème": "Problème 3", "défend": "Equipe 7", "attaque": "Equipe 8", "observe": "Equipe 9"}
+      ]}
+    ] },
+    { "day": "Samedi", "time": "14:45", "events": ["Temps libre", "Délibération Oral 1"] },
+    { "day": "Samedi", "time": "15:00", "events": [
+      {"title": "Débat 2", "poules": [
+        {"poule": "A", "problème": "Problème 4", "défend": "Equipe 2", "attaque": "Equipe 3", "observe": "Equipe 1"},
+        {"poule": "B", "problème": "Problème 5", "défend": "Equipe 5", "attaque": "Equipe 6", "observe": "Equipe 4"},
+        {"poule": "C", "problème": "Problème 6", "défend": "Equipe 8", "attaque": "Equipe 9", "observe": "Equipe 7"}
+      ]}
+    ] },
+    { "day": "Samedi", "time": "15:45", "events": ["Temps libre", "Délibération Oral 2"] },
+    { "day": "Samedi", "time": "16:00", "events": [
+      {"title": "Débat 3", "poules": [
+        {"poule": "A", "problème": "Problème 7", "défend": "Equipe 3", "attaque": "Equipe 1", "observe": "Equipe 2"},
+        {"poule": "B", "problème": "Problème 8", "défend": "Equipe 6", "attaque": "Equipe 4", "observe": "Equipe 5"},
+        {"poule": "C", "problème": "Problème 9", "défend": "Equipe 9", "attaque": "Equipe 7", "observe": "Equipe 8"}
+      ]}
+    ] },
+    { "day": "Samedi", "time": "16:45", "events": ["Goûter", "Délibération Oral 4"] },
+    { "day": "Samedi", "time": "17:00", "events": ["Distribution solutions tour 2 et fiches synthèses vierges / travail autonome", "Calcul résultats Jour 1 et Harmonisation"] },
+    { "day": "Samedi", "time": "17:30", "events": ["Rangement", "Travail autonome", "Retour aux équipes"] },
+    { "day": "Samedi", "time": "18:15", "events": ["Annonce des résultats du Jour 1"] },
+    { "day": "Samedi", "time": "18:30", "events": ["Retour sur les notes du Jour 1"] },
+  
+    { "day": "Dimanche", "time": "09:00", "events": ["Photocopie fiches synthèses Jour 2", "Retour des fiches-synthèse Jour 2"] },
+    { "day": "Dimanche", "time": "09:30", "events": ["Travail autonome", "Formation nouveaux jurés"] },
+    { "day": "Dimanche", "time": "10:00", "events": ["Délibération écrits Jour 2"] },
+    { "day": "Dimanche", "time": "11:00", "events": ["Débat 1"] },
+    { "day": "Dimanche", "time": "11:45", "events": ["Temps libre", "Délibération Oral 2"] },
+    { "day": "Dimanche", "time": "12:00", "events": ["Préparation Déjeuner", "Débat 2"] },
+    { "day": "Dimanche", "time": "12:45", "events": ["Délibération Oral 3"] },
+    { "day": "Dimanche", "time": "13:00", "events": ["Déjeuner"] },
+    { "day": "Dimanche", "time": "13:30", "events": ["Rangement déjeuner", "Débat 3"] },
+    { "day": "Dimanche", "time": "14:15", "events": ["Récupération affaires dans salles", "Délibération Oral 3"] },
+    { "day": "Dimanche", "time": "14:30", "events": ["Exposé de clôture", "Harmonisation, calcul des résultats et signature des diplômes"] },
+    { "day": "Dimanche", "time": "15:30", "events": ["Cérémonie de clôture dont remise des prix"] },
+    { "day": "Dimanche", "time": "16:00", "events": ["Goûter de clôture"] },
+    { "day": "Dimanche", "time": "16:30", "events": ["Rangement et ménage"] }
+  ]
