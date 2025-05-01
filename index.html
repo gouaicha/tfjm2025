@@ -6,7 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TFJM Montpellier</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script type="module" src="./script/main.js"></script>
+  <!-- <script type="module" src="./script/main.js"></script> -->
+
+  <script type="module">
+    // === /script/main.js ===
+import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js';
+
+const app = createApp({
+  data() {
+    return {
+      newsList: []
+    }
+  },
+  async mounted() {
+    if (document.getElementById('app')) {
+      const newsResponse = await fetch('./data/news.json');
+      this.newsList = await newsResponse.json();
+    }
+  }
+});
+
+app.component('news-item', {
+  props: ['news'],
+  template: `
+    <div class="news-item">
+      <div class="news-author">@TFJM_Mtp</div>
+      <div class="news-content" v-html="news.content"></div>
+      <div class="news-time">{{ news.time }}</div>
+    </div>
+  `
+});
+
+app.mount('#app');
+
+</script>
+
 </head>
 <body>
   <header>
