@@ -5,7 +5,7 @@
       "Accueil des participants, distribution goodies, installation dans les salles par équipes",
       "Travail autonome facultatif"
     ] },
-    { "day": "Samedi", "time": "11:30", "events": ["Cérémonie d'ouverture"] },
+    { "day": "Samedi", "time": "11:30", "events": ["Cérémonie d'ouverture"], location:"Amphi 1" },
     { "day": "Samedi", "time": "12:00", "events": ["Déjeuner collectif"] },
     { "day": "Samedi", "time": "12:30", "events": ["Travail autonome facultatif", "Formation nouveaux jurés"] },
     { "day": "Samedi", "time": "13:00", "events": ["Délibération sur les écrits"] },
