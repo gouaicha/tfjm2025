@@ -14,7 +14,7 @@ const app = createApp({
       this.planning = await response.json();
     }
     if (document.getElementById('app')) {
-      const newsResponse = await fetch('../data/news.json');
+      const newsResponse = await fetch('./data/news.json');
       this.newsList = await newsResponse.json();
     }
   }
