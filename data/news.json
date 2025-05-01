@@ -1,12 +1,11 @@
 [
-    {
+  {
+    "time": "29/05/2025 20:00",
+    "content": "<p>Tirage au sort des poules et des problèmes !</p>"
+  }
+  ,{
       "time": "29/05/2025 19:00",
       "content": "<p>Bienvenue à tous les participants du TFJM Montpellier !</p>"
-    },
-    {
-      "time": "29/05/2025 20:00",
-      "content": "<p>Tirage au sort des poules et des problèmes !</p>"
-    },
-    
-  ]
+    }
+]
   

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Plan du campus</title>
   <link rel="stylesheet" href="../styles/style.css">
 </head>
@@ -11,8 +12,24 @@
   <main>
     <nav><a href="../index.html">⬅ Retour à l'accueil</a></nav>
     <p>Voici le plan du campus :</p>
-    <img src="../images/plan-campus.jpg" alt="Plan du campus" style="width:100%;max-width:800px;margin:auto;display:block;">
-    <p>Les amphithéâtres principaux sont indiqués en rouge sur le plan. Les salles pour les joutes sont réparties autour du bâtiment central.</p>
+
+    <div style="position: relative; width: 100%; max-width: 600px;">
+      <img src="../img/campus.jpg" style="width: 100%;">
+      <div style="position: absolute; top: 55%; left: 13%; background: rgba(18, 2, 245, 0.9); color: white;">
+        <b>TFJM (Bat 5)</b>
+      </div>
+      <div style="position: absolute; top: 40%; left: 75%; background: rgba(16, 221, 9, 0.8); color: white;">
+        Accès PC Sécurité
+      </div>
+
+      <div style="position: absolute; top: 80%; left: 40%;  color: white;">
+        <i class="fas fa-ban" style="font-size: 60px; color: rgba(255, 0, 0, 0.5);"></i>
+      </div>
+
+
+      
+    </div>
+    <p>Les amphithéâtres et les salles sont à l'intérieur du Batiment 5.</p>
   </main>
 </body>
 </html>
