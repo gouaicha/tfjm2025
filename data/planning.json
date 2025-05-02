@@ -22,7 +22,7 @@
     {"title": "Débat 2", "poules": [
       {"poule": "A", "location":"Amphi 1", "problème": "Problème 2", "défend": "TJM", "attaque": "LSG", "observe": "INV"},
       {"poule": "B", "location":"Amphi 2", "problème": "Problème 3", "défend": "NMS", "attaque": "LGL", "observe": "LDV"},
-      {"poule": "C", "location":"Amphi 3", "problème": "Problème 6", "défend": "PPR", "attaque": "LGR", "observe": "JDS"}
+      {"poule": "C", "location":"Amphi 3", "problème": "Problème 6", "défend": "LGR", "attaque": "JDS", "observe": "PPR"}
     ]}
   ] 
   },
@@ -30,8 +30,8 @@
   { "day": "Samedi", "time": "16:00", "events": [
     {"title": "Débat 3", "poules": [
       {"poule": "A", "location":"Amphi 1", "problème": "Problème 4", "défend": "LSG", "attaque": "INV", "observe": "TJM"},
-      {"poule": "B", "location":"Amphi 2", "problème": "Problème 4", "défend": "LGL", "attaque": "LDV", "observe": "NMS"},
-      {"poule": "C", "location":"Amphi 3", "problème": "Problème 7", "défend": "LGR", "attaque": "JDS", "observe": "PPR"}
+      {"poule": "B", "location":"Amphi 2", "problème": "Problème 4", "défend": "LGR", "attaque": "LDV", "observe": "NMS"},
+      {"poule": "C", "location":"Amphi 3", "problème": "Problème 7", "défend": "JDS", "attaque": "PPR", "observe": "LGR"}
       
     ]
     }
