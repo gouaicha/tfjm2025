@@ -13,7 +13,7 @@
     {"title": "Débat 1", "poules": [
       {"poule": "A", "location":"Amphi 1", "problème": "Problème 7", "défend": "INV", "attaque": "TJM", "observe": "LSG"},
       {"poule": "B", "location":"Amphi 2", "problème": "Problème 5", "défend": "LDV", "attaque": "NMS", "observe": "LGL"},
-      {"poule": "C", "location":"Amphi 3", "problème": "Problème 4", "défend": "JDS", "attaque": "PPR", "observe": "LGR"}
+      {"poule": "C", "location":"Amphi 3", "problème": "Problème 4", "défend": "PPR", "attaque": "LGR", "observe": "JDS"}
     ]}
   ] 
   },
